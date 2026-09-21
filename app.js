@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
   
@@ -28,5 +27,23 @@ document.addEventListener("DOMContentLoaded", () => {
     infoList.classList.toggle("show");
   });
 
+
+  // Portfolio filter
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const projectItems = document.querySelectorAll(".project-item");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+
+      projectItems.forEach((item) => {
+        const show = filter === "all" || item.getAttribute("data-category") === filter;
+        item.classList.toggle("hide", !show);
+      });
+    });
+  });
 
 });

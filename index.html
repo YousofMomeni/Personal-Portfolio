@@ -64,6 +64,11 @@
                         <img src="image/linkedin.svg" alt="لینکدین">
                     </a>
                 </div>
+                <div id="aside-logo">
+                    <a href="#">
+                        <img src="image/greeno.svg" alt="Greeno">
+                    </a>
+                </div>
             </div>
         </aside>
 
@@ -97,7 +102,7 @@
                     <div class="services-grid">
                         <div class="service-card">
                             <div class="service-icon">
-                                <!-- <img src="" alt=""> -->
+                                <img src="image/source_code.svg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>توسعه پایتون</h4>
@@ -106,7 +111,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <!-- <img src="" alt=""> -->
+                                <img src="image/html_5.svg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>توسعه فرانت‌اند</h4>
@@ -115,7 +120,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <!-- <img src="" alt=""> -->
+                                <img src="image/electronics.svg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>اینترنت اشیا (IoT)</h4>
@@ -124,7 +129,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <!-- <img src="" alt=""> -->
+                                <img src="image/artificial_intelligence.svg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>هوش مصنوعی</h4>
@@ -259,7 +264,47 @@
                 <section id="section-portfolio">
                     <h2>پروژه‌ها</h2>
                     <div class="title-line"></div>
-                    <p>این بخش به‌زودی تکمیل می‌شود.</p>
+
+                    <ul class="portfolio-filter">
+                        <li><button class="filter-btn active" data-filter="all">همه</button></li>
+                        <li><button class="filter-btn" data-filter="iot">اینترنت اشیا</button></li>
+                        <li><button class="filter-btn" data-filter="ai">هوش مصنوعی</button></li>
+                        <li><button class="filter-btn" data-filter="wordpress">وردپرس</button></li>
+                    </ul>
+
+                    <ul class="project-list">
+                        <li class="project-item" data-category="iot">
+                            <div class="project-img">
+                                <span class="project-img-text"></span>
+                            </div>
+                            <h3 class="project-title">خانه هوشمند <span class="project-en">Green House</span></h3>
+                            <p class="project-category">اینترنت اشیا</p>
+                        </li>
+
+                        <li class="project-item" data-category="iot">
+                            <div class="project-img">
+                                <span class="project-img-text"></span>
+                            </div>
+                            <h3 class="project-title">گلخانه هوشمند <span class="project-en">Green Sense</span></h3>
+                            <p class="project-category">اینترنت اشیا</p>
+                        </li>
+
+                        <li class="project-item" data-category="ai">
+                            <div class="project-img">
+                                <span class="project-img-text"></span>
+                            </div>
+                            <h3 class="project-title">دستیار صوتی <span class="project-en">Soran</span></h3>
+                            <p class="project-category">هوش مصنوعی</p>
+                        </li>
+
+                        <li class="project-item" data-category="wordpress">
+                            <div class="project-img">
+                                <span class="project-img-text"></span>
+                            </div>
+                            <h3 class="project-title">پلتفرم نوآرنا <span class="project-en">NoArena</span></h3>
+                            <p class="project-category">وردپرس</p>
+                        </li>
+                    </ul>
                 </section>
 
                 <section id="section-blog">
