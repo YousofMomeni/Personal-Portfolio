@@ -105,7 +105,7 @@ aside{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -152,6 +152,39 @@ aside{
     text-overflow: ellipsis;
     text-decoration: none;
     display: block;
+}
+
+.info-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #343434;
+}
+
+.info-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #2b2b2c;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.social-icon:hover{
+    background-color: #343434;
+}
+
+.social-icon img{
+    width: 14px;
+    height: 14px;
 }
 
 
@@ -277,6 +310,110 @@ section p{
 }
 
 
+.resume-block{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2a2a;
+}
+
+#edu-block{
+    margin-top: 15px;
+    padding-top: 0px;
+    border-top: none;
+}
+
+
+.resume-block-title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.resume-icon{
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2b2c;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    color: #3c986f;
+}
+
+.resume-icon img{
+    width: 19px;
+    height: 19px;
+}
+
+.resume-block-title h3{
+    font-size: 17px;
+}
+
+.timeline-list{
+    list-style: none;
+    margin: 0;
+    padding-right: 22px;
+    border-right: 2px solid #343434;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.timeline-item{
+    position: relative;
+}
+
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -31px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #3c986f;
+    border: 4px solid #343434;
+}
+
+.timeline-item-title{
+    font-size: 15px;
+    color: #f1f1f1;
+    margin: 0 0 4px;
+}
+
+.timeline-date{
+    display: inline-block;
+    font-size: 14px;
+    color: #3c986f;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+}
+
+.timeline-text{
+    font-size: 13px;
+    margin: 0;
+    color: #a5a5a6;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-tag{
+    background-color: #242425;
+    border: 1px solid #343434;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: #f1f1f1;
+}
+
 @media (max-width: 700px){
 
     body{
@@ -379,6 +516,14 @@ section p{
 
     .services-grid{
         grid-template-columns: 1fr;
+    }
+
+    .timeline-list{
+        padding-right: 18px;
+    }
+
+    .timeline-item::before{
+        right: -26.3px;
     }
 
     nav ul{

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <aside>
@@ -25,24 +27,6 @@
             <div id="info-list">
                 <div class="info-item">
                     <div class="info-icon">
-                        <img src="image/mail.svg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <span class="info-label">ایمیل</span>
-                        <span class="info-value">yosofmomeni111@gmail.com</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <img src="image/iphone_x.svg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <span class="info-label">تلفن</span>
-                        <span class="info-value">۰۹۰۳۸۱۴۴۸۲۵</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
                         <img src="image/age.svg" alt="">
                     </div>
                     <div class="info-text">
@@ -52,39 +36,33 @@
                 </div>
                 <div class="info-item">
                     <div class="info-icon">
-                        <img src="image/student_center.svg" alt="">
+                        <img src="image/mail.svg" alt="">
                     </div>
                     <div class="info-text">
-                        <span class="info-label">تحصیلات</span>
-                        <span class="info-value">یازدهم، هنرستان امیرکبیر</span>
+                        <span class="info-label">ایمیل</span>
+                        <a href="mailto:yosofmomeni111@gmail.com" class="info-value">yosofmomeni111@gmail.com</a>
                     </div>
                 </div>
                 <div class="info-item">
                     <div class="info-icon">
-                        <img src="image/github.svg" alt="">
+                        <img src="image/iphone_x.svg" alt="">
                     </div>
                     <div class="info-text">
-                        <span class="info-label">گیت‌هاب</span>
-                        <a href="https://github.com/YousofMomeni" class="info-value">YousofMomeni</a>
+                        <span class="info-label">تلفن</span>
+                        <a href="tel:+989038144825" class="info-value">۰۹۰۳۸۱۴۴۸۲۵</a>
                     </div>
                 </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <img src="image/telegram_app.svg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <span class="info-label">تلگرام</span>
-                        <a href="https://t.me/YousofMomeni" class="info-value">@YousofMomeni</a>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <img src="image/linkedin.svg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <span class="info-label">لینکدین</span>
-                        <a href="#" class="info-value">Yousof Momeni</a>
-                    </div>
+                <div class="info-divider"></div>
+                <div class="info-social">
+                    <a href="https://github.com/YousofMomeni" class="social-icon" title="گیت‌هاب">
+                        <img src="image/github.svg" alt="گیت‌هاب">
+                    </a>
+                    <a href="https://t.me/YousofMomeni" class="social-icon" title="تلگرام">
+                        <img src="image/telegram_app.svg" alt="تلگرام">
+                    </a>
+                    <a href="#" class="social-icon" title="لینکدین">
+                        <img src="image/linkedin.svg" alt="لینکدین">
+                    </a>
                 </div>
             </div>
         </aside>
@@ -154,12 +132,128 @@
                             </div>
                         </div>
                     </div>
+
+                    <h3>مهارت‌ها</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">IoT Development</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">ThreeJS</span>
+                        <span class="skill-tag">NestJS</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
                 </section>
 
                 <section id="section-resume">
                     <h2>تجربه</h2>
                     <div class="title-line"></div>
-                    <p>این بخش به‌زودی تکمیل می‌شود.</p>
+
+                    <div class="resume-block" id="edu-block">
+                        <div class="resume-block-title">
+                            <div class="resume-icon">
+                                <img src="image/student_center.svg" alt="">
+                            </div>
+                            <h3>تحصیلات</h3>
+                        </div>
+
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">هنرستان سمپاد امیرکبیر</h4>
+                                <span class="timeline-date">پایه یازدهم</span>
+                                <p class="timeline-text">رشته شبکه و نرم‌افزار</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="resume-block">
+                        <div class="resume-block-title">
+                            <div class="resume-icon">
+                                <img src="image/briefcase.svg" alt="">
+                            </div>
+                            <h3>تجربه</h3>
+                        </div>
+
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">برنامه‌نویس JS</h4>
+                                <span class="timeline-date">۱۴۰۵</span>
+                                <p class="timeline-text">پژوهشکده هوا خورشید دانشگاه فردوسی مشهد</p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">طراحی و ساخت گلخانه هوشمند</h4>
+                                <span class="timeline-date">۱۴۰۴</span>
+                                <p class="timeline-text">پروژه Green Sense؛ طراحی و ساخت سامانه گلخانه هوشمند</p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">ساخت دستیار صوتی</h4>
+                                <span class="timeline-date">۱۴۰۴</span>
+                                <p class="timeline-text">پروژه Soran؛ توسعه دستیار صوتی هوشمند</p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">بنیان‌گذار تیم گرینو</h4>
+                                <span class="timeline-date">۱۴۰۳</span>
+                                <p class="timeline-text">Greeno Team؛ تشکیل و مدیریت تیم توسعه پروژه‌های هوشمند</p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">طراحی سایت پلتفرم نوآرنا</h4>
+                                <span class="timeline-date">۱۴۰۳</span>
+                                <p class="timeline-text">NoArena؛ طراحی و توسعه فرانت‌اند پلتفرم</p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">طراحی و ساخت خانه هوشمند</h4>
+                                <span class="timeline-date">۱۴۰۲</span>
+                                <p class="timeline-text">پروژه Green House؛ اولین پروژه اینترنت اشیا</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="resume-block">
+                        <div class="resume-block-title">
+                            <div class="resume-icon">
+                                <img src="image/verified_account.svg" alt="">
+                            </div>
+                            <h3>گواهینامه‌ها و افتخارات</h3>
+                        </div>
+
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">دوره وب CS50 هاروارد</h4>
+                                <span class="timeline-date">۱۴۰۵</span>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">دوره پایتون CS50 هاروارد</h4>
+                                <span class="timeline-date">۱۴۰۴</span>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">رتبه دوم حوزه سازه هوشمند</h4>
+                                <span class="timeline-date">۱۴۰۳</span>
+                                <p class="timeline-text">جشنواره هوشمند خوارزمی</p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">دوره اینترنت اشیاء</h4>
+                                <span class="timeline-date">۱۴۰۲</span>
+                                <p class="timeline-text">آکادمی یاسان</p>
+                            </li>
+
+                            <li class="timeline-item">
+                                <h4 class="timeline-item-title">دوره پایتون</h4>
+                                <span class="timeline-date">۱۴۰۲</span>
+                                <p class="timeline-text">آکادمی یاسان</p>
+                            </li>
+                        </ol>
+                    </div>
                 </section>
 
                 <section id="section-portfolio">
@@ -180,4 +274,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
